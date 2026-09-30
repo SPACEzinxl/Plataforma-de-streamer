@@ -156,13 +156,7 @@ pagina de filmes/
 
 ## 👤 Autor
 
-Desenvolvido por **Samuel Nobre**  
-Entre em contato ou acompanhe meus projetos:
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)
-
----
+Desenvolvido por **Samuel e Luiggi**  
 
 <div align="center">
   <sub>Projeto desenvolvido para fins educacionais e portfólio. Todos os direitos de imagens e marcas pertencem aos seus respectivos criadores.</sub>
