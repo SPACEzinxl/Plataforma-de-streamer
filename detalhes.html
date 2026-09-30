@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobre+ | Detalhes do Filme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body class="detail-page-body">
+
+    <!-- NAVEGAÇÃO SUPERIOR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link" title="Nobre+"><img src="images/nobre-logo.png" alt="Nobre+" class="nav-brand-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html"><span class="material-symbols-outlined">home</span> HOME</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">search</span> PESQUISA</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">add</span> MINHA LISTA</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">movie</span> FILMES</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">tv</span> SÉRIES</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">star</span> ORIGINAIS</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="back-home-btn"><span class="material-symbols-outlined">arrow_back</span> Voltar ao Início</a>
+            <img src="" alt="Perfil" class="profile-avatar" id="detailAvatar">
+        </div>
+    </nav>
+
+    <!-- PÁGINA DE DETALHES -->
+    <main class="detail-main">
+        <!-- HERO BANNER FULLSCREEN -->
+        <section class="detail-hero-section">
+            <img src="images/logo1.jpg" alt="Banner do Filme" class="detail-hero-bg" id="detailHeroImg">
+            <div class="detail-hero-overlay"></div>
+            
+            <div class="detail-hero-content">
+                <span class="detail-badge-tag" id="detailBadgeTag">Trailer</span>
+                
+                <!-- Logo ou Título do Filme -->
+                <img src="images/logo2.png" alt="Logo do Filme" class="detail-movie-logo" id="detailMovieLogo">
+                <h1 class="detail-movie-title" id="detailMovieTitle" style="display: none;">Vingadores: Doutor Destino</h1>
+                
+                <p class="detail-tagline" id="detailTagline">Trailer da estreia no cinema já disponível</p>
+                
+                <div class="detail-meta-row">
+                    <span class="badge-age r14" id="detailAgeBadge">14+</span>
+                    <span class="badge-res" id="detailResBadge">4K HDR</span>
+                    <span class="detail-genre" id="detailGenre">Super-Heróis, Ação e aventura</span>
+                </div>
+
+                <p class="detail-description" id="detailDescription">
+                    Prepare-se para "Vingadores: Doutor Destino" da Marvel Studios, em dezembro de 2026, só nos cinemas.
+                </p>
+
+                <!-- BOTÕES DE AÇÃO -->
+                <div class="detail-action-buttons">
+                    <button class="btn-play-trailer" id="detailPlayTrailerBtn">
+                        <span class="material-symbols-outlined filled">play_arrow</span> TRAILER
+                    </button>
+                    <button class="btn-add-list" id="detailAddListBtn" title="Adicionar à Minha Lista">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE ABAS (SUGESTÕES, EXTRAS, DETALHES) -->
+        <section class="detail-tabs-section">
+            <div class="detail-tabs-nav">
+                <button class="detail-tab-btn active" data-tab="sugestoes">SUGESTÕES</button>
+                <button class="detail-tab-btn" data-tab="extras">EXTRAS</button>
+                <button class="detail-tab-btn" data-tab="detalhes">DETALHES</button>
+            </div>
+
+            <!-- CONTEÚDO DAS ABAS -->
+            <div class="detail-tab-pane active" id="tab-sugestoes">
+                <div class="detail-suggestions-grid" id="detailSuggestionsGrid">
+                    <!-- Cards preenchidos dinamicamente por JS -->
+                </div>
+            </div>
+
+            <div class="detail-tab-pane" id="tab-extras">
+                <div class="detail-extras-empty">
+                    <span class="material-symbols-outlined" style="font-size: 3rem;">movie</span>
+                    <p>Nenhum extra ou cena de bastidores disponível no momento.</p>
+                </div>
+            </div>
+
+            <div class="detail-tab-pane" id="tab-detalhes">
+                <div class="detail-info-grid">
+                    <div class="info-card">
+                        <h4>Duração</h4>
+                        <p id="detailDuration">2h 45min</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Data de Lançamento</h4>
+                        <p id="detailRelease">Dezembro de 2026</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Gênero</h4>
+                        <p id="detailGenreFull">Ação, Aventura, Ficção Científica</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Direção</h4>
+                        <p id="detailDirector">Anthony e Joe Russo</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Elenco Principal</h4>
+                        <p id="detailCast">Robert Downey Jr., Pedro Pascal, Vanessa Kirby, Benedict Cumberbatch</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Classificação Indicativa</h4>
+                        <p id="detailRating">14 anos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DE VÍDEO DO TRAILER FULLSCREEN -->
+    <div class="trailer-modal" id="trailerModal">
+        <div class="trailer-modal-content">
+            <button class="trailer-close-btn" id="trailerCloseBtn" aria-label="Fechar"><span class="material-symbols-outlined">close</span></button>
+            <div class="trailer-video-wrapper" id="trailerVideoWrapper"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="theme.js?v=5"></script>
+    <script src="movies-data.js?v=10"></script>
+    <script src="database.js?v=5"></script>
+    <script src="detalhes.js"></script>
+</body>
+</html>
+
