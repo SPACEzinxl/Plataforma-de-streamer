@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobre+ | Aparência & Fundo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+    <!-- NAVEGAÇÃO SUPERIOR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link" title="Nobre+ Início">
+                <img src="images/nobre-logo.png" alt="Nobre+" class="nav-brand-logo">
+            </a>
+            <div class="user-profile" id="navUserProfile">
+                <img src="" alt="Perfil" class="profile-avatar" id="navAvatar">
+                <span class="user-name" id="navUsername"></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">bolt</span> Ao Vivo</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">add</span> Minha Lista</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">movie</span> Filmes</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">tv</span> Séries</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">star</span> Originais</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="nav-search-btn" id="openSearchBtn" aria-label="Pesquisar"><span class="material-symbols-outlined">search</span></button>
+            <button class="nav-logout-btn" id="navLogoutBtn" title="Sair da conta"><span class="material-symbols-outlined">logout</span></button>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menu"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html"><span class="material-symbols-outlined">home</span> Início</a>
+        <a href="#"><span class="material-symbols-outlined">bolt</span> Ao Vivo</a>
+        <a href="#"><span class="material-symbols-outlined">add</span> Minha Lista</a>
+        <a href="#"><span class="material-symbols-outlined">movie</span> Filmes</a>
+        <a href="#"><span class="material-symbols-outlined">tv</span> Séries</a>
+        <a href="#"><span class="material-symbols-outlined">star</span> Originais</a>
+        <a href="configuracoes.html"><span class="material-symbols-outlined">settings</span> Configurações</a>
+    </div>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="settings-page">
+        <!-- Breadcrumb -->
+        <div class="settings-breadcrumb">
+            <a href="index.html"><span class="material-symbols-outlined" style="font-size:16px;">arrow_back</span> Início</a>
+            <span class="separator"><span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span></span>
+            <a href="configuracoes.html">Configurações</a>
+            <span class="separator"><span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span></span>
+            <span class="current">Aparência & Fundo</span>
+        </div>
+
+        <!-- Cabeçalho -->
+        <div class="settings-header">
+            <div>
+                <span class="settings-header-badge"><span class="material-symbols-outlined" style="font-size:14px;">palette</span> Personalização Aura Imperial</span>
+                <h1>Personalização Visual & Fundo do Site</h1>
+                <p>Escolha o papel de parede oficial, efeitos visuais dinâmicos ou cores sólidas para transformar o fundo de toda a sua experiência cinematográfica no Nobre+.</p>
+            </div>
+        </div>
+
+        <!-- Layout: Sidebar + Conteúdo -->
+        <div class="settings-layout">
+            <!-- Sidebar -->
+            <aside class="settings-sidebar">
+                <div class="settings-sidebar-label">Menu de Configurações</div>
+                <nav>
+                    <a href="configuracoes.html">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">smart_display</span> Reprodução e Vídeo</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes-tema.html" class="active">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">wallpaper</span> Aparência & Fundo</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes-conta.html">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">crown</span> Conta e Assinatura</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes.html#account">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">account_circle</span> Perfis</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">devices</span> Dispositivos Conectados</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">security</span> Privacidade & Segurança</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                </nav>
+                <div class="settings-sidebar-divider"></div>
+                <div class="settings-sidebar-footer">
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
+                        <span style="color:var(--gold);font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;">Plano Ativo</span>
+                        <span style="font-size:0.6rem;padding:0.2rem 0.5rem;border-radius:6px;background:rgba(242,202,80,0.15);color:var(--gold);border:1px solid rgba(242,202,80,0.3);font-weight:700;">4K HDR VIP</span>
+                    </div>
+                    <div style="font-size:0.85rem;font-weight:700;color:var(--text-light);font-family:var(--font-headline);">Nobre+ Imperial</div>
+                    <p>Resolução Ultra-HD 4K, áudio espacial Dolby Atmos e personalização ilimitada de temas.</p>
+                </div>
+            </aside>
+
+            <!-- Conteúdo -->
+            <div class="settings-sections">
+
+                <!-- SEÇÃO: Modo de Aparência -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">contrast</span></div>
+                            <div>
+                                <h3>MODO DE APARÊNCIA</h3>
+                                <p>Alterna entre o tema escuro imperial, tema claro ou modo automático.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-grid">
+                        <div class="theme-card selected" data-theme="dark">
+                            <div style="height:100%;width:100%;background:linear-gradient(135deg,#121317 0%,#1f1f24 60%,#2c2c31 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+                                <span class="material-symbols-outlined" style="font-size:32px;color:var(--gold);">dark_mode</span>
+                                <span style="color:var(--text-light);font-weight:600;font-size:0.8rem;">Escuro (Imperial)</span>
+                            </div>
+                            <div class="theme-label">Tema Escuro</div>
+                            <div class="theme-check"><span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'FILL' 1;">check</span></div>
+                        </div>
+                        <div class="theme-card" data-theme="light">
+                            <div style="height:100%;width:100%;background:linear-gradient(135deg,#f5f3ef 0%,#e8e4da 60%,#d9d2c2 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+                                <span class="material-symbols-outlined" style="font-size:32px;color:#8a6d1f;">light_mode</span>
+                                <span style="color:#4a3a10;font-weight:600;font-size:0.8rem;">Claro (Brilliant)</span>
+                            </div>
+                            <div class="theme-label" style="color:#2a2108;">Tema Claro</div>
+                            <div class="theme-check"><span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'FILL' 1;">check</span></div>
+                        </div>
+                        <div class="theme-card" data-theme="auto">
+                            <div style="height:100%;width:100%;background:linear-gradient(120deg,#121317 0%,#121317 50%,#e8e4da 50%,#f5f3ef 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+                                <span class="material-symbols-outlined" style="font-size:32px;color:var(--gold);">brightness_auto</span>
+                                <span style="color:var(--text-light);font-weight:600;font-size:0.8rem;">Automático</span>
+                            </div>
+                            <div class="theme-label">Automático (Sistema)</div>
+                            <div class="theme-check"><span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'FILL' 1;">check</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO: Cor de Destaque -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">color_lens</span></div>
+                            <div>
+                                <h3>COR DE DESTAQUE</h3>
+                                <p>Selecione a cor de acento utilizada em botões, destaques e elementos interativos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-wrap:wrap;gap:1rem;" id="accentSwatches">
+                        <div class="accent-swatch" data-accent="dourado" style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;cursor:pointer;">
+                            <div class="accent-circle selected" style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#f5d77f,#d4af37);border:3px solid var(--gold);box-shadow:0 0 12px var(--gold-glow);"></div>
+                            <span style="font-size:0.7rem;color:var(--gold);font-weight:600;">Dourado</span>
+                        </div>
+                        <div class="accent-swatch" data-accent="rubi" style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;cursor:pointer;">
+                            <div class="accent-circle" style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#ff7b72,#d1323f);border:3px solid var(--border-subtle);"></div>
+                            <span style="font-size:0.7rem;color:var(--text-muted);">Rubi</span>
+                        </div>
+                        <div class="accent-swatch" data-accent="safira" style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;cursor:pointer;">
+                            <div class="accent-circle" style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#7dd3fc,#0284c7);border:3px solid var(--border-subtle);"></div>
+                            <span style="font-size:0.7rem;color:var(--text-muted);">Safira</span>
+                        </div>
+                        <div class="accent-swatch" data-accent="esmeralda" style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;cursor:pointer;">
+                            <div class="accent-circle" style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#6ee7b7,#059669);border:3px solid var(--border-subtle);"></div>
+                            <span style="font-size:0.7rem;color:var(--text-muted);">Esmeralda</span>
+                        </div>
+                        <div class="accent-swatch" data-accent="ametista" style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;cursor:pointer;">
+                            <div class="accent-circle" style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#d8b4fe,#7c3aed);border:3px solid var(--border-subtle);"></div>
+                            <span style="font-size:0.7rem;color:var(--text-muted);">Ametista</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO: Papel de Parede -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">wallpaper</span></div>
+                            <div>
+                                <h3>PAPEL DE PAREDE</h3>
+                                <p>Personalize o fundo da página inicial com imagens oficiais ou cores sólidas.</p>
+                            </div>
+                        </div>
+                        <span class="settings-header-badge" style="font-size:0.6rem;">Wallpaper Oficial</span>
+                    </div>
+                    <div class="theme-grid">
+                        <div class="theme-card selected" data-wall="imperial" style="background:linear-gradient(135deg,#0d0e12,#1a1b20);">
+                            <div style="height:100%;width:100%;display:flex;align-items:center;justify-content:center;">
+                                <span class="material-symbols-outlined" style="font-size:40px;color:var(--gold);">auto_awesome</span>
+                            </div>
+                            <div class="theme-label">Aura Imperial</div>
+                            <div class="theme-check"><span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'FILL' 1;">check</span></div>
+                        </div>
+                        <div class="theme-card" data-wall="nebula" style="background:linear-gradient(135deg,#0b1026,#3b1d5e 50%,#0d0e12);">
+                            <div style="height:100%;width:100%;"></div>
+                            <div class="theme-label">Nebulosa Real</div>
+                        </div>
+                        <div class="theme-card" data-wall="cinema" style="background:linear-gradient(135deg,#1a0b0b,#661414 50%,#0d0e12);">
+                            <div style="height:100%;width:100%;"></div>
+                            <div class="theme-label">Sala de Cinema</div>
+                        </div>
+                        <div class="theme-card" data-wall="golddust" style="background:linear-gradient(135deg,#1a1300,#7c5c00 50%,#0d0e12);">
+                            <div style="height:100%;width:100%;"></div>
+                            <div class="theme-label">Pó de Ouro</div>
+                        </div>
+                        <div class="theme-card" data-wall="midnight" style="background:linear-gradient(135deg,#06070a,#1b1e28 50%,#0d0e12);">
+                            <div style="height:100%;width:100%;"></div>
+                            <div class="theme-label">Meia-Noite</div>
+                        </div>
+                        <div class="theme-card" data-wall="royaltech" style="background:linear-gradient(135deg,#04121f,#0c3a5c 50%,#0d0e12);">
+                            <div style="height:100%;width:100%;"></div>
+                            <div class="theme-label">Azul Imperial</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO: Efeitos Visuais -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">auto_awesome</span></div>
+                            <div>
+                                <h3>EFEITOS VISUAIS</h3>
+                                <p>Ajuste animações e efeitos visuais para uma experiência mais imersiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toggle-row">
+                        <div class="toggle-info">
+                            <label>Animações de interface</label>
+                            <p>Transições suaves e micro-animações em cards, botões e navegação.</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <div class="toggle-info">
+                            <label>Efeito de brilho dourado</label>
+                            <p>Realce metálico e brilho nos elementos de destaque, indicando conteúdo premium.</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <div class="toggle-info">
+                            <label>Reduzir movimento</label>
+                            <p>Minimiza transições e efeitos de parallax para dispositivos com baixa performance.</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="settings-footer">
+        <div class="settings-footer-inner">
+            <img src="images/nobre-logo.png" alt="Nobre+" style="height:36px;object-fit:contain;">
+            <div class="settings-footer-links">
+                <a href="#">Política de Privacidade</a><span class="sep">•</span>
+                <a href="#">Contrato de Assinatura</a><span class="sep">•</span>
+                <a href="#">Ajuda e Suporte</a><span class="sep">•</span>
+                <a href="#">Dispositivos Compatíveis</a><span class="sep">•</span>
+                <a href="#">Sobre o Nobre+</a>
+            </div>
+            <p>© 2024 Nobre+. Todos os direitos reservados. O serviço Nobre+ é comercializado pela Nobre Entertainment Streaming Inc.</p>
+        </div>
+    </footer>
+
+    <script src="theme.js?v=5"></script>
+    <script src="movies-data.js?v=10"></script>
+    <script src="database.js?v=5"></script>
+    <script src="script.js?v=5"></script>
+    <script>
+        function selectMode(mode) {
+            var theme = NobreTheme.get();
+            theme.mode = mode;
+            NobreTheme.save(theme);
+            document.querySelectorAll('.theme-card[data-theme]').forEach(c => {
+                c.classList.toggle('selected', c.dataset.theme === mode);
+            });
+        }
+
+        function selectAccent(accent) {
+            var theme = NobreTheme.get();
+            theme.accent = accent;
+            NobreTheme.save(theme);
+            document.querySelectorAll('#accentSwatches .accent-swatch').forEach(s => {
+                var sel = s.dataset.accent === accent;
+                s.querySelector('.accent-circle').classList.toggle('selected', sel);
+                s.classList.toggle('selected', sel);
+                var label = s.querySelector('span');
+                if (label) label.style.color = sel ? 'var(--gold)' : 'var(--text-muted)';
+            });
+        }
+
+        // Modo de aparência
+        document.querySelectorAll('.theme-card[data-theme]').forEach(card => {
+            card.addEventListener('click', () => selectMode(card.dataset.theme));
+        });
+
+        // Cor de destaque
+        document.querySelectorAll('#accentSwatches .accent-swatch').forEach(sw => {
+            sw.addEventListener('click', () => selectAccent(sw.dataset.accent));
+        });
+
+        // Papel de parede (persistido, aplicado ao fundo da página)
+        document.querySelectorAll('.theme-card[data-wall]').forEach(card => {
+            card.addEventListener('click', () => {
+                card.closest('.theme-grid').querySelectorAll('.theme-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+                try { localStorage.setItem('nobre_wallpaper', card.dataset.wall); } catch (e) {}
+                NobreTheme.applyWallpaper();
+            });
+        });
+
+        // Ao carregar: marca os valores salvos
+        (function initThemeUI() {
+            var theme = NobreTheme.get();
+            document.querySelectorAll('.theme-card[data-theme]').forEach(c => {
+                c.classList.toggle('selected', c.dataset.theme === theme.mode);
+            });
+            document.querySelectorAll('#accentSwatches .accent-swatch').forEach(s => {
+                var sel = s.dataset.accent === theme.accent;
+                s.querySelector('.accent-circle').classList.toggle('selected', sel);
+                s.classList.toggle('selected', sel);
+                var label = s.querySelector('span');
+                if (label) label.style.color = sel ? 'var(--gold)' : 'var(--text-muted)';
+            });
+            var wall = NobreTheme.getWallpaper();
+            document.querySelectorAll('.theme-card[data-wall]').forEach(c => {
+                c.classList.toggle('selected', c.dataset.wall === wall);
+            });
+        })();
+
+        document.querySelectorAll('.settings-logout-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (confirm('Deseja sair da conta Nobre+?')) {
+                    DB.logout();
+                    window.location.href = 'login.html';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

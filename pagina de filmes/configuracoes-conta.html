@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobre+ | Conta & Assinatura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+    <!-- NAVEGAÇÃO SUPERIOR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link" title="Nobre+ Início">
+                <img src="images/nobre-logo.png" alt="Nobre+" class="nav-brand-logo">
+            </a>
+            <div class="user-profile" id="navUserProfile">
+                <img src="" alt="Perfil" class="profile-avatar" id="navAvatar">
+                <span class="user-name" id="navUsername"></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="material-symbols-outlined">home</span> Início</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">bolt</span> Ao Vivo</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">add</span> Minha Lista</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">movie</span> Filmes</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">tv</span> Séries</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">star</span> Originais</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="nav-search-btn" id="openSearchBtn" aria-label="Pesquisar"><span class="material-symbols-outlined">search</span></button>
+            <button class="nav-logout-btn" id="navLogoutBtn" title="Sair da conta"><span class="material-symbols-outlined">logout</span></button>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menu"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html"><span class="material-symbols-outlined">home</span> Início</a>
+        <a href="#"><span class="material-symbols-outlined">bolt</span> Ao Vivo</a>
+        <a href="#"><span class="material-symbols-outlined">add</span> Minha Lista</a>
+        <a href="#"><span class="material-symbols-outlined">movie</span> Filmes</a>
+        <a href="#"><span class="material-symbols-outlined">tv</span> Séries</a>
+        <a href="#"><span class="material-symbols-outlined">star</span> Originais</a>
+        <a href="configuracoes.html"><span class="material-symbols-outlined">settings</span> Configurações</a>
+    </div>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="settings-page">
+        <!-- Breadcrumb -->
+        <div class="settings-breadcrumb">
+            <a href="index.html"><span class="material-symbols-outlined" style="font-size:16px;">arrow_back</span> Início</a>
+            <span class="separator"><span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span></span>
+            <a href="configuracoes.html">Configurações</a>
+            <span class="separator"><span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span></span>
+            <span class="current">Conta & Assinatura</span>
+        </div>
+
+        <!-- Cabeçalho -->
+        <div class="settings-header">
+            <h1>Gerenciamento de Conta e Assinatura</h1>
+            <p>Administre seus dados pessoais, método de pagamento imperial, faturas e detalhes do plano ativo.</p>
+        </div>
+
+        <!-- Layout: Sidebar + Conteúdo -->
+        <div class="settings-layout">
+            <!-- Sidebar -->
+            <aside class="settings-sidebar">
+                <div class="settings-sidebar-label">Menu de Configurações</div>
+                <nav>
+                    <a href="configuracoes.html">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">smart_display</span> Reprodução e Vídeo</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes-tema.html">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">palette</span> Aparência & Fundo</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes-conta.html" class="active">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">crown</span> Conta e Assinatura</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes.html#account">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">account_circle</span> Perfis</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes.html#downloads-storage">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">download</span> Reprodução e Download</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes.html#devices">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">devices</span> Dispositivos Conectados</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                    <a href="configuracoes.html#privacy">
+                        <span class="icon-wrap"><span class="material-symbols-outlined">security</span> Privacidade & Segurança</span>
+                        <span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span>
+                    </a>
+                </nav>
+                <div class="settings-sidebar-divider"></div>
+                <div class="settings-sidebar-footer">
+                    <div style="display:flex;align-items:center;gap:0.4rem;color:var(--gold);font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;">
+                        <span class="material-symbols-outlined" style="font-size:16px;">support_agent</span>
+                        Concierge Nobre+
+                    </div>
+                    <p>Atendimento executivo prioritário 24/7 com assessoria privativa.</p>
+                    <button class="btn-outline" style="width:100%;margin-top:0.5rem;justify-content:center;font-size:0.75rem;">Solicitar Contato VIP</button>
+                </div>
+            </aside>
+
+            <!-- Conteúdo -->
+            <div class="settings-sections">
+
+                <!-- Card do Plano Superior -->
+                <div class="plan-card">
+                    <span class="material-symbols-outlined plan-watermark">crown</span>
+                    <div style="position:relative;z-index:1;">
+                        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border-subtle);">
+                            <div>
+                                <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;flex-wrap:wrap;">
+                                    <span class="plan-badge">Plano Máximo Soberano</span>
+                                    <span class="plan-status"><span class="dot"></span> Assinatura Ativa</span>
+                                </div>
+                                <h2 style="font-family:var(--font-headline);font-size:1.4rem;font-weight:700;color:var(--text-light);">Plano Nobre+ Royal Sovereign 4K HDR & Dolby Atmos</h2>
+                                <p style="font-size:0.85rem;color:var(--text-subtle);margin-top:0.4rem;">Próxima renovação automática em <span style="color:var(--text-light);font-weight:600;">24 de Novembro de 2024</span> via cobrança padrão.</p>
+                            </div>
+                            <div style="text-align:right;">
+                                <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-subtle);font-family:var(--font-label);">Valor Mensal</div>
+                                <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem;">
+                                    <span style="font-family:var(--font-headline);font-size:2.2rem;font-weight:800;color:var(--gold);">R$ 49,90</span>
+                                    <span style="font-size:0.8rem;color:var(--text-subtle);">/ mês</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="padding-top:1.5rem;">
+                            <span style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-subtle);font-family:var(--font-label);display:block;margin-bottom:0.75rem;">Privilégios Inclusos na Assinatura</span>
+                            <div class="plan-features">
+                                <div class="plan-feature">
+                                    <span class="material-symbols-outlined">tv</span>
+                                    <div class="feature-text"><strong>4 Telas Simultâneas</strong><span>Em ultra definição</span></div>
+                                </div>
+                                <div class="plan-feature">
+                                    <span class="material-symbols-outlined">spatial_audio</span>
+                                    <div class="feature-text"><strong>Dolby Atmos</strong><span>Áudio espacial imersivo</span></div>
+                                </div>
+                                <div class="plan-feature">
+                                    <span class="material-symbols-outlined">movie</span>
+                                    <div class="feature-text"><strong>4K UHD IMAX</strong><span>Fidelidade de cinema</span></div>
+                                </div>
+                                <div class="plan-feature">
+                                    <span class="material-symbols-outlined">download_for_offline</span>
+                                    <div class="feature-text"><strong>Downloads Ilimitados</strong><span>Até 10 dispositivos</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(212,175,55,0.12);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;">
+                            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;">
+                                <button class="btn-gold">Mudar de Plano</button>
+                                <button class="btn-outline">Pausar Assinatura</button>
+                            </div>
+                            <button style="display:flex;align-items:center;gap:0.35rem;font-size:0.8rem;color:#ffb4ab;background:none;border:none;cursor:pointer;padding:0.4rem;">
+                                <span class="material-symbols-outlined" style="font-size:16px;">cancel</span>
+                                Cancelar Plano
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Streaming Parceiros da Assinatura -->
+                <div class="settings-card" id="streaming-access">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">cable</span></div>
+                            <div>
+                                <h3>Acessos da Assinatura</h3>
+                                <p>Entre nas plataformas parceiras inclusas no seu plano diretamente pelo ícone da empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stream-access-grid">
+                        <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" class="stream-access-card" title="Abrir Netflix">
+                            <div class="stream-logo stream-logo-netflix">
+                                <img src="images/netflix.png" alt="Netflix">
+                            </div>
+                            <div class="stream-text">
+                                <strong>Netflix</strong>
+                                <span>Filmes, séries e originais Netflix</span>
+                            </div>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </a>
+                        <a href="https://www.disneyplus.com" target="_blank" rel="noopener noreferrer" class="stream-access-card" title="Abrir Disney+">
+                            <div class="stream-logo stream-logo-disney">
+                                <img src="images/disneyplus.png" alt="Disney+">
+                            </div>
+                            <div class="stream-text">
+                                <strong>Disney+</strong>
+                                <span>Disney, Pixar, Marvel e Star Wars</span>
+                            </div>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </a>
+                        <a href="https://www.max.com" target="_blank" rel="noopener noreferrer" class="stream-access-card" title="Abrir HBO Max">
+                            <div class="stream-logo stream-logo-max">
+                                <img src="images/hbo-max.webp" alt="HBO Max">
+                            </div>
+                            <div class="stream-text">
+                                <strong>HBO Max</strong>
+                                <span>HBO, Warner Bros e Max Originals</span>
+                            </div>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dados Pessoais e Segurança -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">shield_person</span></div>
+                            <div>
+                                <h3>Dados Pessoais e Segurança</h3>
+                                <p>Credenciais do titular da conta e status de autenticação protegida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr;gap:1rem;" id="accountFields">
+                        <div style="background:rgba(10,10,13,0.5);padding:1rem;border-radius:10px;border:1px solid var(--border-subtle);">
+                            <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-subtle);font-family:var(--font-label);font-weight:700;">Nome do Titular</span>
+                            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.25rem;">
+                                <span style="font-size:1rem;font-weight:500;color:var(--text-light);" id="accountName">Luiggi Nobre</span>
+                                <a href="editar-perfil.html" style="font-size:0.75rem;color:var(--gold);text-decoration:none;">Editar</a>
+                            </div>
+                        </div>
+                        <div style="background:rgba(10,10,13,0.5);padding:1rem;border-radius:10px;border:1px solid var(--border-subtle);">
+                            <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-subtle);font-family:var(--font-label);font-weight:700;">E-mail de Acesso</span>
+                            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.25rem;flex-wrap:wrap;gap:0.5rem;">
+                                <div style="display:flex;align-items:center;gap:0.5rem;">
+                                    <span style="font-size:0.9rem;color:var(--text-light);" id="accountEmail">luigginobre@imperial.com</span>
+                                    <span style="font-size:0.6rem;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(242,202,80,0.1);color:var(--gold);border:1px solid rgba(242,202,80,0.2);font-weight:700;text-transform:uppercase;">Verificado</span>
+                                </div>
+                                <a href="editar-perfil.html" style="font-size:0.75rem;color:var(--gold);text-decoration:none;">Alterar</a>
+                            </div>
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr;gap:1rem;" id="accountFields2">
+                            <div style="background:rgba(10,10,13,0.5);padding:1rem;border-radius:10px;border:1px solid var(--border-subtle);">
+                                <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-subtle);font-family:var(--font-label);font-weight:700;">Credencial de Senha</span>
+                                <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.25rem;">
+                                    <span style="font-size:1rem;color:var(--text-light);letter-spacing:0.15em;font-family:monospace;">••••••••••••••••</span>
+                                    <a href="editar-perfil.html" style="font-size:0.75rem;color:var(--gold);text-decoration:none;">Alterar Senha</a>
+                                </div>
+                            </div>
+                            <div style="background:rgba(10,10,13,0.5);padding:1rem;border-radius:10px;border:1px solid var(--border-subtle);">
+                                <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-subtle);font-family:var(--font-label);font-weight:700;">Autenticação em 2 Etapas (2FA)</span>
+                                <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.25rem;">
+                                    <span style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;color:var(--text-light);"><span class="material-symbols-outlined" style="font-size:16px;color:var(--gold);font-variation-settings:'FILL' 1;">key</span> App Autenticador Ativo</span>
+                                    <a href="editar-perfil.html" style="font-size:0.75rem;color:var(--gold);text-decoration:none;">Gerenciar 2FA</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forma de Pagamento -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">credit_card</span></div>
+                            <div>
+                                <h3>Forma de Pagamento</h3>
+                                <p>Método principal cadastrado para cobranças recorrentes da sua assinatura.</p>
+                            </div>
+                        </div>
+                        <button class="btn-outline" style="font-size:0.7rem;padding:0.45rem 0.85rem;"><span class="material-symbols-outlined" style="font-size:14px;">add_card</span> Adicionar Método</button>
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center;" id="paymentArea">
+                        <div class="payment-card">
+                            <div class="card-glow"></div>
+                            <div class="card-top">
+                                <div style="display:flex;align-items:center;gap:0.5rem;">
+                                    <span class="material-symbols-outlined" style="color:var(--gold);font-variation-settings:'FILL' 1;">crown</span>
+                                    <span style="font-size:0.6rem;letter-spacing:0.15em;color:var(--gold);font-weight:800;text-transform:uppercase;">Imperial Black</span>
+                                </div>
+                                <div style="display:flex;">
+                                    <div style="width:26px;height:26px;border-radius:50%;background:rgba(220,38,38,0.7);"></div>
+                                    <div style="width:26px;height:26px;border-radius:50%;background:rgba(245,158,11,0.7);margin-left:-8px;"></div>
+                                </div>
+                            </div>
+                            <div class="card-number">•••• •••• •••• 8892</div>
+                            <div class="card-bottom">
+                                <div>
+                                    <div class="card-label">Titular</div>
+                                    <div class="card-value" style="text-transform:uppercase;letter-spacing:0.1em;">Luiggi Nobre</div>
+                                </div>
+                                <div>
+                                    <div class="card-label">Validade</div>
+                                    <div class="card-value">08/29</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:0.85rem;">
+                            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                                <span style="font-size:0.65rem;padding:0.2rem 0.6rem;border-radius:6px;background:rgba(242,202,80,0.1);color:var(--gold);border:1px solid rgba(242,202,80,0.2);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;">Método Padrão Imperial</span>
+                                <span style="font-size:0.8rem;color:var(--text-subtle);">Mastercard Black com seguro de compra & concierge global</span>
+                            </div>
+                            <p style="font-size:0.85rem;color:var(--text-light);">Cobrança agendada no dia <span style="font-weight:600;color:var(--gold);">24 de cada mês</span>. Limite protegido por tokenização biométrica da rede Nobre+.</p>
+                            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:0.25rem;">
+                                <button class="btn-outline">Editar Cartão</button>
+                                <button style="font-size:0.8rem;color:var(--text-subtle);background:none;border:none;cursor:pointer;">Definir Limite de Segurança</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Histórico de Faturas -->
+                <div class="settings-card">
+                    <div class="settings-card-header">
+                        <div class="header-left">
+                            <div class="header-icon"><span class="material-symbols-outlined">receipt_long</span></div>
+                            <div>
+                                <h3>Histórico de Faturas e Recibos</h3>
+                                <p>Relatório consolidado de mensalidades faturadas com notas fiscais para download.</p>
+                            </div>
+                        </div>
+                        <button style="display:flex;align-items:center;gap:0.3rem;font-size:0.75rem;color:var(--gold);background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined" style="font-size:16px;">file_download</span> Exportar Todos (CSV)</button>
+                    </div>
+                    <div style="overflow-x:auto;">
+                        <table class="invoice-table">
+                            <thead>
+                                <tr>
+                                    <th>Período / Referência</th>
+                                    <th>Plano</th>
+                                    <th>Método</th>
+                                    <th>Valor</th>
+                                    <th>Status</th>
+                                    <th style="text-align:right;">Comprovante Fiscal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="display:flex;align-items:center;gap:0.4rem;color:var(--text-light);font-weight:500;"><span style="width:6px;height:6px;border-radius:50%;background:var(--gold);"></span> 24 de Outubro de 2024</td>
+                                    <td style="color:var(--text-subtle);">Nobre+ Royal Sovereign</td>
+                                    <td style="color:var(--text-subtle);">Mastercard •••• 8892</td>
+                                    <td style="color:var(--text-light);font-weight:600;">R$ 49,90</td>
+                                    <td><span class="invoice-status paid"><span style="width:6px;height:6px;border-radius:50%;background:#34d399;"></span> Pago</span></td>
+                                    <td style="text-align:right;"><button style="display:inline-flex;align-items:center;gap:0.3rem;font-size:0.7rem;color:var(--gold);background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined" style="font-size:15px;">picture_as_pdf</span> Baixar PDF</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="display:flex;align-items:center;gap:0.4rem;color:var(--text-light);font-weight:500;"><span style="width:6px;height:6px;border-radius:50%;background:var(--text-subtle);"></span> 24 de Setembro de 2024</td>
+                                    <td style="color:var(--text-subtle);">Nobre+ Royal Sovereign</td>
+                                    <td style="color:var(--text-subtle);">Mastercard •••• 8892</td>
+                                    <td style="color:var(--text-light);font-weight:600;">R$ 49,90</td>
+                                    <td><span class="invoice-status paid"><span style="width:6px;height:6px;border-radius:50%;background:#34d399;"></span> Pago</span></td>
+                                    <td style="text-align:right;"><button style="display:inline-flex;align-items:center;gap:0.3rem;font-size:0.7rem;color:var(--gold);background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined" style="font-size:15px;">picture_as_pdf</span> Baixar PDF</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="display:flex;align-items:center;gap:0.4rem;color:var(--text-light);font-weight:500;"><span style="width:6px;height:6px;border-radius:50%;background:var(--text-subtle);"></span> 24 de Agosto de 2024</td>
+                                    <td style="color:var(--text-subtle);">Nobre+ Royal Sovereign</td>
+                                    <td style="color:var(--text-subtle);">Mastercard •••• 8892</td>
+                                    <td style="color:var(--text-light);font-weight:600;">R$ 49,90</td>
+                                    <td><span class="invoice-status paid"><span style="width:6px;height:6px;border-radius:50%;background:#34d399;"></span> Pago</span></td>
+                                    <td style="text-align:right;"><button style="display:inline-flex;align-items:center;gap:0.3rem;font-size:0.7rem;color:var(--gold);background:none;border:none;cursor:pointer;"><span class="material-symbols-outlined" style="font-size:15px;">picture_as_pdf</span> Baixar PDF</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="settings-footer">
+        <div class="settings-footer-inner">
+            <img src="images/nobre-logo.png" alt="Nobre+" style="height:36px;object-fit:contain;">
+            <div class="settings-footer-links">
+                <a href="#">Política de Privacidade</a><span class="sep">•</span>
+                <a href="#">Contrato de Assinatura</a><span class="sep">•</span>
+                <a href="#">Ajuda e Suporte</a><span class="sep">•</span>
+                <a href="#">Dispositivos Compatíveis</a><span class="sep">•</span>
+                <a href="#">Sobre o Nobre+</a>
+            </div>
+            <p>© 2024 Nobre+. Todos os direitos reservados. O serviço Nobre+ é comercializado pela Nobre Entertainment Streaming Inc.</p>
+        </div>
+    </footer>
+
+    <script src="theme.js?v=5"></script>
+    <script src="movies-data.js?v=10"></script>
+    <script src="database.js?v=5"></script>
+    <script src="script.js?v=5"></script>
+    <script>
+        document.querySelectorAll('.settings-logout-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (confirm('Deseja sair da conta Nobre+?')) {
+                    DB.logout();
+                    window.location.href = 'login.html';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
